@@ -1,0 +1,19 @@
+.h3 {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    transition: ease 0.1s;
+}
+
+#edadEncuestado:hover {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.02rem rgb(0 123 255 / 25%);
+}
+
+#edadEncuestado:focus-within {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
