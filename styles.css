@@ -17,3 +17,8 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
+
+.seccion-container {
+    box-shadow: 0 5px 5px -2px rgba(156, 156, 156, 0.5), 0 5px 5px -1px rgb(0 123 255 / 25%);
+    padding: 0 1.5rem 1rem 1.5rem;
+}
