@@ -13,5 +13,6 @@
       10) Existe un @media-query en el archivo CSS para modificar el texto y centrarlo cuadno los dispositivos son de pantalla pequeña
       11) El font-color y background-color de la pagina esta preparada para mejorar la facilidad de lectura de los textos. Segun The Web
       Content Accessibility Guidelines (WCAG). El ratio de nuestro constraste es de 21:1, el mayor posible.
+      12) Los botones "Guardar Encuesta" y "Limpiar encuesta" tienen acceskey para facilitar el uso de los usuarios que utilizan solo teclado
  -->
  

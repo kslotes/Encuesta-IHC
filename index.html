@@ -15,6 +15,7 @@
 <!-- 
       Dudas:
             Deberia haber un <nav> en algun lado?
+            Agregar colores en HSL?
  -->
 
 <body>
@@ -23,7 +24,7 @@
         <section class="container">
             <!-- Header -->
             <header class="col-md-12">
-                <h1 class="text-center">Encuesta sobre televisión y streaming</h1>
+                <h1 class="text-center" tabindex="0">Encuesta sobre televisión y streaming</h1>
             </header>
             <hr />
             <!-- Inicio Encuesta -->
@@ -381,11 +382,10 @@
             </section>
             <section class="row">
                 <section class="col-md-12">
-                    <button type="submit" class="btn btn-info" id="saveForm" onclick="saveForm">Guardar Encuesta</button>
-                    <button type="reset" class="btn btn-danger" id="clearForm">Limpiar formulario</button>
+                    <button type="submit" class="btn btn-info" id="saveForm" onclick="saveForm" accesskey="s">Guardar Encuesta</button>
+                    <button type="reset" class="btn btn-danger" id="clearForm" accesskey="b">Limpiar formulario</button>
                 </section>
             </section>
-        </section>
     </form>
     <!-- FIN ENCUESTA -->
     <br /><br />
