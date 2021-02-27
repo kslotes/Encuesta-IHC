@@ -1,3 +1,11 @@
+/* Como agregar variables, y luego mejorar compatibilidad? 
+      Mejorar sintaxis a traves de variables y media queries*/
+
+:root {
+    --color-sombra: rgb(0 123 255 / 25%);
+    --color-borde: #80bdff;
+}
+
 body {
     color: black;
     background-color: white;
@@ -13,23 +21,25 @@ h3 {
 
 #edadEncuestado:hover {
     border-color: #80bdff;
+    border-color: var(--color-borde);
     outline: 0;
     box-shadow: 0 0 0 0.02rem rgb(0 123 255 / 25%);
+    box-shadow: 0 0 0 0.02rem var(--color-sombra);
 }
 
 #edadEncuestado:focus-within {
     border-color: #80bdff;
+    border-color: var(--color-borde);
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    box-shadow: 0 0 0 0.02rem rgb(0 123 255 / 25%);
+    box-shadow: 0 0 0 0.2rem var(--color-sombra);
 }
 
 .seccion-container {
     box-shadow: 0 5px 5px -2px rgba(156, 156, 156, 0.5), 0 5px 5px -1px rgb(0 123 255 / 25%);
+    box-shadow: 0 5px 5px -2px rgba(156, 156, 156, 0.5), 0 5px 5px -1px var(--color-sombra);
     padding: 0 1.5rem 1rem 1.5rem;
 }
-
-
-/* On screens that are 992px or less, set the background color to blue */
 
 @media screen and (max-width: 767px) {
     h3 {
