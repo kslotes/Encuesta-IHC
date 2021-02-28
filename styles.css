@@ -1,9 +1,12 @@
 /* Como agregar variables, y luego mejorar compatibilidad? 
-      Mejorar sintaxis a traves de variables y media queries*/
+      Mejorar sintaxis a traves de variables y media queries
+      Agregar dark theme a traves de variables?
+      Mejorar ratio de contraste. No usar 21:1 */
 
 :root {
-    --color-sombra: rgb(0 123 255 / 25%);
+    --color-sombra1: rgba(0, 123, 255, 0.25);
     --color-borde: #80bdff;
+    --sombra-container: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
 }
 
 body {
@@ -24,21 +27,22 @@ h3 {
     border-color: var(--color-borde);
     outline: 0;
     box-shadow: 0 0 0 0.02rem rgb(0 123 255 / 25%);
-    box-shadow: 0 0 0 0.02rem var(--color-sombra);
+    box-shadow: 0 0 0 0.02rem var(--color-sombra1);
 }
 
 #edadEncuestado:focus-within {
     border-color: #80bdff;
     border-color: var(--color-borde);
     outline: 0;
-    box-shadow: 0 0 0 0.02rem rgb(0 123 255 / 25%);
-    box-shadow: 0 0 0 0.2rem var(--color-sombra);
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    box-shadow: 0 0 0 0.2rem var(--color-sombra1);
 }
 
 .seccion-container {
-    box-shadow: 0 5px 5px -2px rgba(156, 156, 156, 0.5), 0 5px 5px -1px rgb(0 123 255 / 25%);
-    box-shadow: 0 5px 5px -2px rgba(156, 156, 156, 0.5), 0 5px 5px -1px var(--color-sombra);
-    padding: 0 1.5rem 1rem 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
+    box-shadow: var(--sombra-container);
+    border-radius: 5px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
