@@ -16,6 +16,7 @@
       Dudas:
             Deberia haber un <nav> en algun lado?
             Agregar colores en HSL?
+            Esta bien la estructura de etiquetas? Que se puede sacar?
  -->
 
 <body>
@@ -39,7 +40,7 @@
                         <section class="row">
                             <section class="col-md-4">
                                 <label for="edadEncuestado">Seleccione su edad: *</label>
-                                <input value="edadEncuestado" type="number" class="form-control" id="edadEncuestado" required placeholder="Edad" />
+                                <input value=" " type="number" class="form-control" id="edadEncuestado" required placeholder="Edad" />
                             </section>
                         </section>
                     </section>
@@ -59,12 +60,8 @@
                     <section class="col-md-6">
                         <p>1- ¿Mirás televisión habitualmente?</p>
                     </section>
-                    <section class="col-md-2">
-                        <label for="pregunta1a"> <input value="pregunta1a" type="radio" name="pregunta1" id="pregunta1a" /> Si </label>
-                    </section>
-                    <section class="col-md-2">
-                        <label for="pregunta1b"> <input value="pregunta1b" type="radio" name="pregunta1" id="pregunta1b" /> No </label>
-                    </section>
+                    <label class="col-md-2" for="pregunta1a"> <input value="Si" type="radio" name="pregunta1" id="pregunta1a" /> Si </label>
+                    <label class="col-md-2" for="pregunta1b"> <input value="No" type="radio" name="pregunta1" id="pregunta1b" /> No </label>
                 </fieldset>
                 <!--  PREGUNTA 2  -->
                 <fieldset class="row">
@@ -72,13 +69,13 @@
                         <p>2- ¿Cuánto tiempo mirás televisión a diario?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta2a"> <input value="pregunta2a" type="radio" name="pregunta2" id="pregunta2a" /> Menos de 1 hora </label>
+                        <label for="pregunta2a"> <input value="Menos de 1 hora" type="radio" name="pregunta2" id="pregunta2a" /> Menos de 1 hora </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta2b"> <input value="pregunta2b" type="radio" name="pregunta2" id="pregunta2b" /> De 1 a 3 horas </label>
+                        <label for="pregunta2b"> <input value="De 1 a 3 horas" type="radio" name="pregunta2" id="pregunta2b" /> De 1 a 3 horas </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta2c"> <input value="pregunta2c" type="radio" name="pregunta2" id="pregunta2c" /> Más de 3 horas </label>
+                        <label for="pregunta2c"> <input value="Mas de 3 horas" type="radio" name="pregunta2" id="pregunta2c" /> Más de 3 horas </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 3  -->
@@ -87,13 +84,13 @@
                         <p>3- ¿Por qué?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta3a"> <input value="pregunta3a" type="radio" name="pregunta3" id="pregunta3a" /> No tengo tiempo </label>
+                        <label for="pregunta3a"> <input value="No tengo tiempo" type="radio" name="pregunta3" id="pregunta3a" /> No tengo tiempo </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta3b"> <input value="pregunta3b" type="radio" name="pregunta3" id="pregunta3b" /> No me gusta el contenido </label>
+                        <label for="pregunta3b"> <input value="No me gusta el contenido" type="radio" name="pregunta3" id="pregunta3b" /> No me gusta el contenido </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta3c"> <input value="pregunta3c" type="radio" name="pregunta3" id="pregunta3c" /> Me hace sentir mal </label>
+                        <label for="pregunta3c"> <input value="Me hace sentir mal" type="radio" name="pregunta3" id="pregunta3c" /> Me hace sentir mal </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 4  -->
@@ -102,13 +99,13 @@
                         <p>4- ¿Y a la semana?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta4a"> <input value="pregunta4a" type="radio" name="pregunta4" id="pregunta4a" /> Menos de 5 horas </label>
+                        <label for="pregunta4a"> <input value="Menos de 5 horas" type="radio" name="pregunta4" id="pregunta4a" /> Menos de 5 horas </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta4b"> <input value="pregunta4b" type="radio" name="pregunta4" id="pregunta4b" /> Entre 5 y 10 horas </label>
+                        <label for="pregunta4b"> <input value="Entre 5 y 10 horas" type="radio" name="pregunta4" id="pregunta4b" /> Entre 5 y 10 horas </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta4c"> <input value="pregunta4c" type="radio" name="pregunta4" id="pregunta4c" /> Mas de 10 horas </label>
+                        <label for="pregunta4c"> <input value="Mas de 10 horas" type="radio" name="pregunta4" id="pregunta4c" /> Mas de 10 horas </label>
                     </section>
                 </fieldset>
             </section>
@@ -128,13 +125,13 @@
                         <p>5- ¿Mirás más televisión que antes de la pandemia?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta5a"> <input value="pregunta5a" type="radio" name="pregunta5" id="pregunta5a" /> Si </label>
+                        <label for="pregunta5a"> <input value="Si" type="radio" name="pregunta5" id="pregunta5a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta5b"> <input value="pregunta5b" type="radio" name="pregunta5" id="pregunta5b" /> No </label>
+                        <label for="pregunta5b"> <input value="No" type="radio" name="pregunta5" id="pregunta5b" /> No </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta5c"> <input value="pregunta5c" type="radio" name="pregunta5" id="pregunta5c" /> Miro lo mismo </label>
+                        <label for="pregunta5c"> <input value="Miro lo mismo" type="radio" name="pregunta5" id="pregunta5c" /> Miro lo mismo </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 5a  -->
@@ -143,13 +140,13 @@
                         <p>5a- ¿Por qué?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta5aa"> <input value="pregunta5aa" type="radio" name="pregunta5a" id="pregunta5aa" /> Tengo más tiempo </label>
+                        <label for="pregunta5aa"> <input value="Tnego mas tiempo" type="radio" name="pregunta5a" id="pregunta5aa" /> Tengo más tiempo </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta5ab"> <input value="pregunta5ab" type="radio" name="pregunta5a" id="pregunta5ab" /> Me distrae </label>
+                        <label for="pregunta5ab"> <input value="Me distrae" type="radio" name="pregunta5a" id="pregunta5ab" /> Me distrae </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta5ac"> <input value="pregunta5ac" type="radio" name="pregunta5a" id="pregunta5ac" /> Me sectionierte </label>
+                        <label for="pregunta5ac"> <input value="Me divierte" type="radio" name="pregunta5a" id="pregunta5ac" /> Me sectionierte </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 6  -->
@@ -158,13 +155,13 @@
                         <p>6- ¿Qué contenido te gusta mirar con mayor frecuencia en la televisión?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta6a"> <input value="pregunta6a" type="radio" name="pregunta6" id="pregunta6a" /> Noticias </label>
+                        <label for="pregunta6a"> <input value="Noticias" type="radio" name="pregunta6" id="pregunta6a" /> Noticias </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta6b"> <input value="pregunta6b" type="radio" name="pregunta6" id="pregunta6b" /> Novelas </label>
+                        <label for="pregunta6b"> <input value="Novelas" type="radio" name="pregunta6" id="pregunta6b" /> Novelas </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta6c"> <input value="pregunta6c" type="radio" name="pregunta6" id="pregunta6c" /> Informativos </label>
+                        <label for="pregunta6c"> <input value="Informativos" type="radio" name="pregunta6" id="pregunta6c" /> Informativos </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 7  -->
@@ -173,10 +170,10 @@
                         <p>7- ¿Mirás canales de noticias regularmente?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7a"> <input value="pregunta7a" type="radio" name="pregunta7" id="pregunta7a" /> Si </label>
+                        <label for="pregunta7a"> <input value="Si" type="radio" name="pregunta7" id="pregunta7a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7b"> <input value="pregunta7b" type="radio" name="pregunta7" id="pregunta7b" /> No </label>
+                        <label for="pregunta7b"> <input value="No" type="radio" name="pregunta7" id="pregunta7b" /> No </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 7a  -->
@@ -185,13 +182,13 @@
                         <p>7a- ¿Cuánto tiempo mirás al día las noticias?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7aa"> <input value="pregunta7aa" type="radio" name="pregunta7a" id="pregunta7aa" /> Menos de 1 hora </label>
+                        <label for="pregunta7aa"> <input value="Menos de 1 hora" type="radio" name="pregunta7a" id="pregunta7aa" /> Menos de 1 hora </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7ab"> <input value="pregunta7ab" type="radio" name="pregunta7a" id="pregunta7ab" /> Entre 1 y 2 horas </label>
+                        <label for="pregunta7ab"> <input value="Entre 1 y 2 horas" type="radio" name="pregunta7a" id="pregunta7ab" /> Entre 1 y 2 horas </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7ac"> <input value="pregunta7ac" type="radio" name="pregunta7a" id="pregunta7ac" /> Más de 2 horas </label>
+                        <label for="pregunta7ac"> <input value="Mas de 2 horas" type="radio" name="pregunta7a" id="pregunta7ac" /> Más de 2 horas </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 7b  -->
@@ -200,13 +197,13 @@
                         <p>7b- ¿Cómo te hacen sentir?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7ba"> <input value="pregunta7ba" type="radio" name="pregunta7b" id="pregunta7ba" /> Mal </label>
+                        <label for="pregunta7ba"> <input value="Mal" type="radio" name="pregunta7b" id="pregunta7ba" /> Mal </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7bb"> <input value="pregunta7bb" type="radio" name="pregunta7b" id="pregunta7bb" /> No me afectan </label>
+                        <label for="pregunta7bb"> <input value="No me afectan" type="radio" name="pregunta7b" id="pregunta7bb" /> No me afectan </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta7bc"> <input value="pregunta7bc" type="radio" name="pregunta7b" id="pregunta7bc" /> Bien </label>
+                        <label for="pregunta7bc"> <input value="Bien" type="radio" name="pregunta7b" id="pregunta7bc" /> Bien </label>
                     </section>
                 </fieldset>
             </section>
@@ -227,13 +224,13 @@
                         <p>8- ¿Consumís servicios de streaming?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta8a"> <input value="pregunta8a" type="radio" name="pregunta8" id="pregunta8a" /> Si </label>
+                        <label for="pregunta8a"> <input value="Si" type="radio" name="pregunta8" id="pregunta8a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta8b"> <input value="pregunta8b" type="radio" name="pregunta8" id="pregunta8b" /> No </label>
+                        <label for="pregunta8b"> <input value="No" type="radio" name="pregunta8" id="pregunta8b" /> No </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta8c"> <input value="pregunta8c" type="radio" name="pregunta8" id="pregunta8c" /> No se lo que es </label>
+                        <label for="pregunta8c"> <input value="No se lo que es" type="radio" name="pregunta8" id="pregunta8c" /> No se lo que es </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 9  -->
@@ -242,13 +239,13 @@
                         <p>9- ¿Preferís mirar los programas por televisión o vía stream?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta9a"> <input value="pregunta9a" type="radio" name="pregunta9" id="pregunta9a" /> Televisión</label>
+                        <label for="pregunta9a"> <input value="Television" type="radio" name="pregunta9" id="pregunta9a" /> Televisión</label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta9b"> <input value="pregunta9b" type="radio" name="pregunta9" id="pregunta9b" /> Stream </label>
+                        <label for="pregunta9b"> <input value="Stream" type="radio" name="pregunta9" id="pregunta9b" /> Stream </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta9c"> <input value="pregunta9c" type="radio" name="pregunta9" id="pregunta9c" /> Me da igual </label>
+                        <label for="pregunta9c"> <input value="Me da igual" type="radio" name="pregunta9" id="pregunta9c" /> Me da igual </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 10  -->
@@ -257,10 +254,10 @@
                         <p>10- ¿Mirás mas servicios de streaming desde que comenzó la pandemia?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta10a"> <input value="pregunta10a" type="radio" name="pregunta10" id="pregunta10a" /> Si </label>
+                        <label for="pregunta10a"> <input value="Si" type="radio" name="pregunta10" id="pregunta10a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta10b"> <input value="pregunta10b" type="radio" name="pregunta10" id="pregunta10b" /> No </label>
+                        <label for="pregunta10b"> <input value="No" type="radio" name="pregunta10" id="pregunta10b" /> No </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 11  -->
@@ -269,10 +266,10 @@
                         <p>11- ¿Miras noticias vía stream?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta11a"> <input value="pregunta11a" type="radio" name="pregunta11" id="pregunta11a" /> Si </label>
+                        <label for="pregunta11a"> <input value="Si" type="radio" name="pregunta11" id="pregunta11a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta11b"> <input value="pregunta11b" type="radio" name="pregunta11" id="pregunta11b" /> No </label>
+                        <label for="pregunta11b"> <input value="No" type="radio" name="pregunta11" id="pregunta11b" /> No </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 12  -->
@@ -281,10 +278,10 @@
                         <p>12- ¿Lo preferís a las noticias convencionales por TV?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta12a"> <input value="pregunta12a" type="radio" name="pregunta12" id="pregunta12a" /> Si </label>
+                        <label for="pregunta12a"> <input value="Si" type="radio" name="pregunta12" id="pregunta12a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta12b"> <input value="pregunta12b" type="radio" name="pregunta12" id="pregunta12b" /> No </label>
+                        <label for="pregunta12b"> <input value="No" type="radio" name="pregunta12" id="pregunta12b" /> No </label>
                     </section>
                 </fieldset>
                 <!--  PREGUNTA 13  -->
@@ -293,10 +290,10 @@
                         <p>13- ¿Te gustaría que mas programas pasen al servicio de streaming?</p>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta13a"> <input value="pregunta13a" type="radio" name="pregunta13" id="pregunta13a" /> Si </label>
+                        <label for="pregunta13a"> <input value="Si" type="radio" name="pregunta13" id="pregunta13a" /> Si </label>
                     </section>
                     <section class="col-md-2">
-                        <label for="pregunta13b"> <input value="pregunta13b" type="radio" name="pregunta13" id="pregunta13b" /> No </label>
+                        <label for="pregunta13b"> <input value="No" type="radio" name="pregunta13" id="pregunta13b" /> No </label>
                     </section>
                 </fieldset>
             </section>
@@ -308,7 +305,6 @@
                 <section class="row">
                     <section class="col-md-12">
                         <h3>Conclusión General.</h3>
-                        <br />
                     </section>
                 </section>
                 <!--  PREGUNTA 14  -->
