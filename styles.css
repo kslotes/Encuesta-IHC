@@ -54,10 +54,26 @@ h1:focus {
     h3 {
         text-align: center;
     }
-    fieldset p {
+    p,
+    #label-edad {
         font-size: 18px;
         font-weight: bold;
         margin-top: 1rem;
+    }
+    #input-edad {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #input-edad {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #input-edad {
+        width: 90%;
     }
 }
 
@@ -65,6 +81,9 @@ h1:focus {
 /* MOTO G4 */
 
 @media screen and (max-width: 400px) {
+    h1 {
+        font-size: 30px;
+    }
     body {
         font-size: 16px;
     }

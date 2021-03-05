@@ -31,8 +31,8 @@
             <!-- Inicio Encuesta -->
             <section class="seccion-container">
                 <h3>Datos básicos</h3>
-                <label for="edadEncuestado">Indique su edad: *</label>
-                <input value="" type="number" class="form-control col-md-6" id="edadEncuestado" required placeholder="Edad" />
+                <label id="label-edad" for="edadEncuestado">Indique su edad: *</label>
+                <input id="input-edad" value="" type="number" class="form-control col-md-6" id="edadEncuestado" required placeholder="Edad" />
             </section>
             <hr />
             <!-- SECCIONES DE PREGUNTAS -->
@@ -72,7 +72,6 @@
             <!--  Television  -->
             <section class="seccion-container">
                 <h3>Televisión.</h3>
-                <p class="col-md-6"> </p>
                 <!--  PREGUNTA 5  -->
                 <fieldset class="row">
                     <p class="col-md-6"> 5- ¿Mirás más televisión que antes de la pandemia?</p>
@@ -119,12 +118,7 @@
             <hr />
             <section class="seccion-container">
                 <!--  Streaming -->
-                <section class="row">
-                    <section class="col-md-12">
-                        <h3>Streaming</h3>
-                        <p></p>
-                    </section>
-                </section>
+                <h3>Streaming</h3>
                 <!--  PREGUNTA 8  -->
 
                 <fieldset class="row">
@@ -154,13 +148,13 @@
                 </fieldset>
                 <!--  PREGUNTA 12  -->
                 <fieldset class="row">
-                    <p>12- ¿Lo preferís a las noticias convencionales por TV?</p>
+                    <p class="col-md-6">12- ¿Lo preferís a las noticias convencionales por TV?</p>
                     <label class="col-md-2" for="pregunta12a"> <input value="Si" type="radio" name="pregunta12" id="pregunta12a" /> Si </label>
                     <label class="col-md-2" for="pregunta12b"> <input value="No" type="radio" name="pregunta12" id="pregunta12b" /> No </label>
                 </fieldset>
                 <!--  PREGUNTA 13  -->
                 <fieldset class="row">
-                    <p>13- ¿Te gustaría que mas programas pasen al servicio de streaming?</p>
+                    <p class="col-md-6">13- ¿Te gustaría que mas programas pasen al servicio de streaming?</p>
                     <label class="col-md-2" for="pregunta13a"> <input value="Si" type="radio" name="pregunta13" id="pregunta13a" /> Si </label>
                     <label class="col-md-2" for="pregunta13b"> <input value="No" type="radio" name="pregunta13" id="pregunta13b" /> No </label>
                 </fieldset>
@@ -170,16 +164,10 @@
             <hr />
             <!--  Satisfacción General  -->
             <section class="seccion-container">
-                <section class="row">
-                    <section class="col-md-12">
-                        <h3>Conclusión General.</h3>
-                    </section>
-                </section>
+                <h3>Conclusión General.</h3>
                 <!--  PREGUNTA 14  -->
                 <section class="row">
-                    <section class="col-md-8">
-                        <p>14- ¿Cómo calificaría su experiencia global respecto a los servicios de televisión que se brindan?</p>
-                    </section>
+                    <p class="col-md-8">14- ¿Cómo calificaría su experiencia global respecto a los servicios de televisión que se brindan?</p>
                     <fieldset class="col-md-4">
                         <select class="form-control" id="pregunta13">
                                 <option value="5">Muy Buena</option>
@@ -194,9 +182,7 @@
                 <br />
                 <!--  PREGUNTA 15  -->
                 <section class="row">
-                    <section class="col-md-8">
-                        <p>15- ¿Como califiaría su experiencia global respecto a los servicios de streaming?</p>
-                    </section>
+                    <p class="col-md-8">15- ¿Como califiaría su experiencia global respecto a los servicios de streaming?</p>
                     <fieldset class="col-md-4">
                         <select class="form-control" id="pregunta14">
                                 <option value="5">Muy Buena</option>
@@ -211,9 +197,7 @@
                 <br />
                 <!--  PREGUNTA 16  -->
                 <section class="row">
-                    <section class="col-md-8">
-                        <p>16- ¿Como calificaría esta encuesta?</p>
-                    </section>
+                    <p class="col-md-8">16- ¿Como calificaría esta encuesta?</p>
                     <fieldset class="col-md-4">
                         <select class="form-control" id="pregunta14">
                                 <option value="5">Muy Buena</option>
@@ -222,7 +206,7 @@
                                 <option value="2">Mala</option>
                                 <option value="1">Muy Mala</option>
                                 <option value="0">No Responde</option>
-                            </select>
+                              </select>
                     </fieldset>
                 </section>
             </section>
@@ -230,18 +214,11 @@
             <hr />
 
             <!--  Comentarios  -->
+            <h3>Comentarios.</h3>
             <section class="row">
-                <section class="col-md-12">
-                    <h3>Comentarios.</h3>
-                    <p></p>
-                </section>
-            </section>
-            <section class="row">
-                <section class="col-md-12">
-                    <section class="form-group">
-                        <label for="comment">Comentarios:</label>
-                        <textarea class="form-control" rows="6" id="comentarios"></textarea>
-                    </section>
+                <section class="form-group col-md-12">
+                    <label for="comment">Comentarios:</label>
+                    <textarea class="form-control" rows="6" id="comentarios"></textarea>
                 </section>
             </section>
             <section class="row">
