@@ -1,6 +1,6 @@
 /* Como agregar variables, y luego mejorar compatibilidad? 
       Mejorar sintaxis a traves de variables y media queries
-      Agregar dark theme a traves de variables?
+      Agregar dark theme a traves de variables? (Usar deteccion del usuario)
       Mejorar ratio de contraste. No usar 21:1 */
 
 :root {

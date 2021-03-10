@@ -1,4 +1,11 @@
 <!-- 
+      * Agregar linear-gradient y paleta de colores *
+      * Detectar navegador y recomendar navegador *
+      * Mejorar visibilidad de la pagina al cargarla. *
+      
+      Colores, Tipografia, Diseño Responsive, Texto alternativo a imagenes, Panel Accesibildad para cubrir distintas dispacacidades.
+      Si la encuesta es multipage, persistir la opcion de accesibilidad
+
       Fundamentos teoricos en el documento:
 
       1) El documento posee solo 1 elemento <header> junto con un <h1> para facilitar el uso de lectores de pantalla
@@ -15,5 +22,5 @@
       Content Accessibility Guidelines (WCAG). El ratio de nuestro constraste es de 21:1, el mayor posible.
       12) Los botones "Guardar Encuesta" y "Limpiar encuesta" tienen acceskey para facilitar el uso de los usuarios que utilizan solo teclado
       13) Usamos variables para colores y agregamos compatibilidad con IE
+
  -->
- 
