@@ -1,21 +1,28 @@
-/* Como agregar variables, y luego mejorar compatibilidad? 
-      Mejorar sintaxis a traves de variables y media queries
-      Agregar dark theme a traves de variables? (Usar deteccion del usuario)
+/*    Agregar dark theme (Usar deteccion del usuario)
       Mejorar ratio de contraste. No usar 21:1 */
 
 :root {
     --color-sombra1: rgba(0, 123, 255, 0.25);
     --color-borde: #80bdff;
     --sombra-container: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
+    --background-gradient: linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%);
+    --sombra-textos: 2px 2px 3px #a86d1b;
 }
 
 body {
     color: black;
-    background-color: white;
+    background: var(--background-gradient);
+    font-weight: 400;
+}
+
+h1 {
+    text-shadow: 2px 2px 3px #c79144;
+    color: rgba(0, 0, 0, 0.9)
 }
 
 h3 {
     margin-bottom: 1.5rem;
+    text-shadow: var(--sombra-textos);
 }
 
 .form-control {
@@ -40,14 +47,51 @@ h3 {
 
 .seccion-container {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
+    background-color: #f1ad4e;
     box-shadow: var(--sombra-container);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
 h1:focus {
     outline: none;
     text-decoration: underline;
+}
+
+#input-edad {
+    background-color: rgba(233, 191, 124, 0.9);
+    border-radius: 10px;
+    border-style: none;
+}
+
+#comentarios {
+    background-color: #f1ad4e;
+    border-radius: 10px;
+    border-style: none;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+#saveForm,
+#clearForm {
+    border-color: black;
+}
+
+#pregunta14,
+#pregunta15,
+#pregunta16 {
+    background-color: rgba(233, 191, 124, 0.9);
+    border-radius: 10px;
+    border-style: none;
+}
+
+#h3-comentarios {
+    text-shadow: 2px 2px 3px #d19e57;
+    color: rgba(0, 0, 0, 0.9)
+}
+
+input {
+    background-color: rgba(233, 191, 124, 0.9);
+    border-style: none;
 }
 
 @media screen and (max-width: 767px) {

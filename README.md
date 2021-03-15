@@ -1,6 +1,5 @@
 <!-- 
-      * Agregar linear-gradient y paleta de colores *
-      * Detectar navegador y recomendar navegador *
+      * Detectar y recomendar navegador *
       * Mejorar visibilidad de la pagina al cargarla. *
       
       Colores, Tipografia, Diseño Responsive, Texto alternativo a imagenes, Panel Accesibildad para cubrir distintas dispacacidades.
