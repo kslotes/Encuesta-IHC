@@ -23,7 +23,6 @@ if (bowser.name.toLowerCase() !== 'chrome') {
             title: `¿Cuál?`,
             icon: `question`,
             input: "select",
-            inputLabel: "Seleccione una:",
             confirmButtonText: '¡Listo!',
             inputOptions: {
                 dislexia: "Dislexia",
