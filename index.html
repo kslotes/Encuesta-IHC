@@ -5,31 +5,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta IHC</title>
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <!-- Styles.css -->
     <link rel="stylesheet" href="styles.css" />
-    <title>Encuesta IHC</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <!-- 
       Dudas:
-            Deberia haber un <nav> en algun lado?
+      Deberia haber un <nav> en algun lado?
             Agregar colores en HSL?
             Esta bien la estructura de etiquetas? Que se puede sacar?
- -->
+      -->
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <br />
     <form>
         <section class="container">
             <!-- Header -->
-            <header class="col-md-12">
+            <header class="col-md-12" data-aos="zoom-in" data-aos-duration="1000">
                 <h1 class="text-center" tabindex="0">Encuesta sobre televisión y streaming</h1>
             </header>
             <hr />
             <!-- Inicio Encuesta -->
-            <section class="seccion-container">
+            <section class="seccion-container" data-aos="fade-right" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <h3>Datos básicos</h3>
                 <label id="label-edad" for="edadEncuestado">Indique su edad: *</label>
                 <input id="input-edad" value="" type="number" class="form-control col-md-6" id="edadEncuestado" required placeholder="Edad" />
@@ -37,7 +42,7 @@
             <hr />
             <!-- SECCIONES DE PREGUNTAS -->
             <!--  Inicio  -->
-            <section class="seccion-container">
+            <section class="seccion-container" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="ease-in-out">
                 <h3 class="h3-inicio">Inicio</h3>
                 <!--  PREGUNTA 1  -->
                 <fieldset class="row">
@@ -70,7 +75,7 @@
             <br />
             <hr />
             <!--  Television  -->
-            <section class="seccion-container">
+            <section class="seccion-container" data-aos="zoom-out-right" data-aos-duration="1500" data-aos-easing="linear">
                 <h3>Televisión.</h3>
                 <!--  PREGUNTA 5  -->
                 <fieldset class="row">
@@ -116,8 +121,8 @@
             </section>
             <br />
             <hr />
-            <section class="seccion-container">
-                <!--  Streaming -->
+            <!--  Streaming -->
+            <section class="seccion-container" data-aos="zoom-in-left" data-aos-duration="1500" data-aos-easing="linear">
                 <h3>Streaming</h3>
                 <!--  PREGUNTA 8  -->
 
@@ -163,7 +168,7 @@
             <br />
             <hr />
             <!--  Satisfacción General  -->
-            <section class="seccion-container">
+            <section class="seccion-container" data-aos="zoom-out-down" data-aos-duration="1500" data-aos-easing="ease-out">
                 <h3>Conclusión General.</h3>
                 <!--  PREGUNTA 14  -->
                 <section class="row">
@@ -214,14 +219,14 @@
             <hr />
 
             <!--  Comentarios  -->
-            <h3 id="h3-comentarios">Comentarios.</h3>
-            <section class="row">
+            <section class="row" data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-out">
                 <section class="form-group col-md-12">
+                    <h3 id="h3-comentarios">Comentarios.</h3>
                     <label for="comment">Comentarios:</label>
                     <textarea class="form-control" rows="6" id="comentarios"></textarea>
                 </section>
             </section>
-            <section class="row">
+            <section class="row" data-aos="flip-right" data-aos-duration="1000">
                 <section class="col-md-12">
                     <button type="submit" class="btn btn-info" id="saveForm" onclick="saveForm" accesskey="s">Guardar Encuesta</button>
                     <button type="reset" class="btn btn-danger" id="clearForm" accesskey="b">Limpiar formulario</button>

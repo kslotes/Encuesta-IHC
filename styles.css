@@ -2,7 +2,7 @@
       Mejorar ratio de contraste. No usar 21:1 */
 
 :root {
-    --color-sombra1: rgba(0, 123, 255, 0.25);
+    --color-sombra1: rgba(112, 139, 168, 0.25);
     --color-borde: #80bdff;
     --sombra-container: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
     --background-gradient: linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%);
@@ -11,18 +11,18 @@
 
 body {
     color: black;
+    background: linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%);
     background: var(--background-gradient);
-    font-weight: 400;
 }
 
 h1 {
     text-shadow: 2px 2px 3px #c79144;
-    color: rgba(0, 0, 0, 0.9)
+    color: rgba(0, 0, 0, 1)
 }
 
 h3 {
     margin-bottom: 1.5rem;
-    text-shadow: var(--sombra-textos);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 3px 3px 6px rgba(0, 123, 255, 0.25);
 }
 
 .form-control {
@@ -47,7 +47,7 @@ h3 {
 
 .seccion-container {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
-    background-color: #f1ad4e;
+    background-color: #e6b570;
     box-shadow: var(--sombra-container);
     border-radius: 10px;
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -65,7 +65,7 @@ h1:focus {
 }
 
 #comentarios {
-    background-color: #f1ad4e;
+    background-color: #e6b570;
     border-radius: 10px;
     border-style: none;
     color: rgba(0, 0, 0, 0.8)
