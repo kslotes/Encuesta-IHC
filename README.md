@@ -1,11 +1,12 @@
 <!-- 
-      * Detectar y recomendar navegador *
-      * Mejorar visibilidad de la pagina al cargarla. *
-      
-      Colores, Tipografia, Diseño Responsive, Texto alternativo a imagenes, Panel Accesibildad para cubrir distintas dispacacidades.
-      Si la encuesta es multipage, persistir la opcion de accesibilidad
+      TODO: 
+            Arreglar secuencia en las que aparecen los popups
+            Aplicar los cambios a la interfaz una vez respondido el pop-up de discapacidad visual.
+            Investigar dark-theme
+            Revisar Tipografía
+            Buscar justificaciones en el contenido teórico de la materia.
 
-      Fundamentos teoricos en el documento:
+      Fundamentos teóricos en el documento:
 
       1) El documento posee solo 1 elemento <header> junto con un <h1> para facilitar el uso de lectores de pantalla
       2) El documento posee solo 1 elemento <footer> al final del documento para facilitar los lectores de pantalla
@@ -22,5 +23,7 @@
       Content Accessibility Guidelines (WCAG). El ratio de nuestro constraste es de 10,82:1 en las secciones de preguntas y 11,39:1 entre el fondo y la fuente.
       12) Los botones "Guardar Encuesta" y "Limpiar encuesta" tienen acceskey para facilitar el uso de los usuarios que utilizan solo teclado
       13) Usamos variables para colores y agregamos compatibilidad con IE
-
+      14) Agregamos transiciones al cargar la pagina y a medida que el usuario scrollea para que la encuesta tenga una mejor imagen a primera vista.
+      15) Agregamos alerta de compatibilidad con navegadores.
+      16) Agregamos pop-up preguntando por discapacidades visuales. 
  -->
