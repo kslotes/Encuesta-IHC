@@ -55,16 +55,19 @@ if (bowser.name.toLowerCase() !== "chrome") {
             inputValue: 2,
             confirmButtonText: "¡Listo!",
             showCancelButton: true,
+            cancelButtonText: "Cancelar"
         }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
-            if (document.getElementById('checkBoxDaltonismo').checked) {
-                aplicarDaltonismo();
-                console.log('Aplico daltonismo')
-            }
-            if (document.getElementById('checkBoxDislexia').checked) {
-                aplicarDislexia();
-                console.log('Aplico dislexia')
+            if (result.isConfirmed) {
 
+                if (document.getElementById('checkBoxDaltonismo').checked) {
+                    aplicarDaltonismo();
+                    console.log('Aplico daltonismo')
+                }
+                if (document.getElementById('checkBoxDislexia').checked) {
+                    aplicarDislexia();
+                    console.log('Aplico dislexia')
+
+                }
             }
         })
     }
