@@ -1,6 +1,13 @@
 /*    Agregar dark theme (Usar deteccion del usuario)
       Mejorar ratio de contraste. No usar 21:1 */
 
+@font-face {
+    font-family: 'opendislexic';
+    src: url("./fonts/OpenDyslexic-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --color-sombra1: rgba(112, 139, 168, 0.25);
     --color-borde: #80bdff;

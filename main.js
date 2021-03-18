@@ -1,4 +1,4 @@
-const changeBackground = () => {
+const aplicarDaltonismo = () => {
     // #f0ce9e secciones
     //#cf9139 fondo
     let section = document.querySelectorAll('.seccion-container');
@@ -11,6 +11,10 @@ const changeBackground = () => {
     for (let i = 0; i <= section.length; i++) {
         section[i].style.backgroundColor = "#f0ce9e";
     }
+}
+const aplicarDislexia = () => {
+    let body = document.querySelector('body');
+    body.style.fontFamily = 'opendislexic', Times, serif, 'Arial';
 }
 
 if (bowser.name.toLowerCase() !== 'chrome') {
@@ -47,9 +51,11 @@ if (bowser.name.toLowerCase() !== 'chrome') {
         });
         switch (disc) {
             case 'daltonismo':
-                changeBackground();
+                aplicarDaltonismo();
                 break;
-
+            case 'dislexia':
+                aplicarDislexia();
+                break;
             default:
                 break;
         }

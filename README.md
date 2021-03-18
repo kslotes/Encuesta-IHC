@@ -1,7 +1,6 @@
 <!-- 
       TODO: 
             Arreglar secuencia en las que aparecen los popups
-            Aplicar los cambios a la interfaz una vez respondido el pop-up de discapacidad visual.
             Investigar dark-theme
             Revisar Tipografía
             Buscar justificaciones en el contenido teórico de la materia.
@@ -27,4 +26,5 @@
       15) Agregamos alerta de compatibilidad con navegadores.
       16) Agregamos pop-up preguntando por discapacidades visuales. 
       17) Cambiamos el contraste de los contenedores si la persona selecciona que es daltonica.
+      18) Cambiamos la font-family si la persona es dislexica.
  -->
