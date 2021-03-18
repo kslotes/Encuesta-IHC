@@ -1,30 +1,27 @@
+const aplicarDislexia = () => {
+    let body = document.querySelector("body");
+    (body.style.fontFamily = "opendislexic"), Times, serif, "Arial";
+};
 const aplicarDaltonismo = () => {
-    // #f0ce9e secciones
-    //#cf9139 fondo
-    let section = document.querySelectorAll('.seccion-container');
-    let comentarios = document.querySelector("#comentarios")
-    let body = document.querySelector('body');
-    let inputEdad = document.querySelector('#input-edad');
+    let section = document.querySelectorAll(".seccion-container");
+    let comentarios = document.querySelector("#comentarios");
+    let body = document.querySelector("body");
+    let inputEdad = document.querySelector("#input-edad");
     inputEdad.style.backgroundColor = "#FF8039";
     body.style.backgroundColor = "#cf9139";
     comentarios.style.backgroundColor = "#f0ce9e";
-    for (let i = 0; i <= section.length; i++) {
-        section[i].style.backgroundColor = "#f0ce9e";
-    }
-}
-const aplicarDislexia = () => {
-    let body = document.querySelector('body');
-    body.style.fontFamily = 'opendislexic', Times, serif, 'Arial';
-}
+    section.forEach(el => {
+        el.style.backgroundColor = "#f0ce9e";
+    })
+};
 
-if (bowser.name.toLowerCase() !== 'chrome') {
+if (bowser.name.toLowerCase() !== "chrome") {
     Swal.fire({
         title: `Navegador desactualizado!`,
         text: `Estas usando ${bowser.name} ${bowser.version}. Para que la encuesta funcione correctamente, te recomendamos utilizar un navegador actual.`,
         icon: `warning`,
-        confirmButtonText: `Entendido`
-    })
-
+        confirmButtonText: `Entendido`,
+    });
 }
 (async() => {
     const { value: disc } = await Swal.fire({
@@ -36,31 +33,39 @@ if (bowser.name.toLowerCase() !== 'chrome') {
         cancelButtonText: `No`,
         icon: `question`,
     });
-
+    let html = `
+            <section class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkBoxDislexia">
+                  <label class="form-check-label" for="checkBoxDislexia">
+                        Dislexia
+                  </label>
+            </section>
+            <section class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="checkBoxDaltonismo">
+                  <label class="form-check-label" for="checkBoxDaltonismo">
+                        Daltonismo
+                  </label>
+            </section>
+            `;
     if (disc) {
-        const { value: disc } = await Swal.fire({
+        Swal.fire({
             title: `¿Cuál?`,
             icon: `question`,
-            input: "select",
-            confirmButtonText: '¡Listo!',
-            inputOptions: {
-                dislexia: "Dislexia",
-                daltonismo: "Daltonismo",
-            },
-            inputPlaceholder: `Seleccione una:`,
-        });
-        switch (disc) {
-            case 'daltonismo':
+            html: html,
+            inputValue: 2,
+            confirmButtonText: "¡Listo!",
+            showCancelButton: true,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (document.getElementById('checkBoxDaltonismo').checked) {
                 aplicarDaltonismo();
-                break;
-            case 'dislexia':
+                console.log('Aplico daltonismo')
+            }
+            if (document.getElementById('checkBoxDislexia').checked) {
                 aplicarDislexia();
-                break;
-            default:
-                break;
-        }
+                console.log('Aplico dislexia')
+
+            }
+        })
     }
 })();
-
-
-console.log(bowser.name, bowser.version);
