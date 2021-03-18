@@ -26,4 +26,5 @@
       14) Agregamos transiciones al cargar la pagina y a medida que el usuario scrollea para que la encuesta tenga una mejor imagen a primera vista.
       15) Agregamos alerta de compatibilidad con navegadores.
       16) Agregamos pop-up preguntando por discapacidades visuales. 
+      17) Cambiamos el contraste de los contenedores si la persona selecciona que es daltonica.
  -->
