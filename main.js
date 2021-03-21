@@ -1,7 +1,6 @@
 let daltActivo = false;
 let disActivo = false;
 
-
 let checkDaltonismo = () => {
     if (daltActivo) {
         invDaltonismo();
@@ -61,6 +60,10 @@ const aplicarDaltonismo = () => {
         el.style.backgroundColor = "#f0ce9e";
     });
     console.log("Aplico daltonismo");
+    let select = document.querySelectorAll('.select');
+    select.forEach((el) => {
+        el.style.backgroundColor = "#FF8039";
+    })
 };
 
 const invDaltonismo = () => {
@@ -76,6 +79,10 @@ const invDaltonismo = () => {
         el.style.backgroundColor = "#e6b570";
     });
     console.log("Invierto daltonismo ");
+    let select = document.querySelectorAll('.select');
+    select.forEach((el) => {
+        el.style.backgroundColor = "rgba(233, 191, 124, 0.9)";
+    })
 };
 
 const invDislexia = () => {

@@ -27,20 +27,12 @@
 
 </head>
 
-<!-- 
-      Dudas:
-      Deberia haber un <nav> en algun lado?
-            Agregar colores en HSL?
-            Esta bien la estructura de etiquetas? Que se puede sacar?
-      -->
-
 <body>
     <script src="./main.js"></script>
     <script>
         AOS.init();
     </script>
     <br />
-    <!-- Default dropleft button -->
     <section class="btn-group dropleft sticky-top">
         <button type="button" id="btn-acc" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-wheelchair"></i>
@@ -48,8 +40,6 @@
         <section class="dropdown-menu">
             <button id="btn-Dislexia" class="dropdown-item " onclick="checkDislexia();"></button>
             <button id="btn-Daltonismo" class="dropdown-item" onclick="checkDaltonismo();"></button>
-
-            <!-- Dropdown menu links -->
         </section>
     </section>
     <form>
@@ -200,7 +190,7 @@
                 <section class="row">
                     <p class="col-md-8">14- ¿Cómo calificaría su experiencia global respecto a los servicios de televisión que se brindan?</p>
                     <fieldset class="col-md-4">
-                        <select class="form-control" id="pregunta14">
+                        <select class="form-control select" id="pregunta14">
                               <option disabled selected>Seleccione una opción </option>
                                 <option value="5">Muy Buena</option>
                                 <option value="4">Buena</option>
@@ -216,7 +206,7 @@
                 <section class="row">
                     <p class="col-md-8">15- ¿Como califiaría su experiencia global respecto a los servicios de streaming?</p>
                     <fieldset class="col-md-4">
-                        <select class="form-control" id="pregunta15">
+                        <select class="form-control select" id="pregunta15">
                               <option disabled selected>Seleccione una opción </option>
                                 <option value="5">Muy Buena</option>
                                 <option value="4">Buena</option>
@@ -232,7 +222,7 @@
                 <section class="row">
                     <p class="col-md-8">16- ¿Como calificaría esta encuesta?</p>
                     <fieldset class="col-md-4">
-                        <select class="form-control" id="pregunta16">
+                        <select class="form-control select" id="pregunta16">
                               <option disabled selected>Seleccione una opción </option>
                                 <option value="5">Muy Buena</option>
                                 <option value="4">Buena</option>

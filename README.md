@@ -2,7 +2,7 @@
       TODO: 
             Arreglar secuencia en las que aparecen los popups
             Investigar dark-theme
-            Revisar Tipografía
+            Revisar Tipografía      
             Buscar justificaciones en el contenido teórico de la materia.
 
       Fundamentos teóricos en el documento:
@@ -27,4 +27,6 @@
       16) Agregamos pop-up preguntando por discapacidades visuales. 
       17) Cambiamos el contraste de los contenedores si la persona selecciona que es daltonica.
       18) Cambiamos la font-family si la persona es dislexica.
+      19) Agregamos boton sticky de accesibilidad en la parte superior derecha para poder activar/desactivar los modos.
+      20) El documento tiene fuente estandar 'Roboto' ya que es una de las mas utilizadas globalmente.
  -->
