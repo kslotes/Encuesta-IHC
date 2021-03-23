@@ -8,29 +8,43 @@
     font-style: normal;
 }
 
+
+
 :root {
+    /* cambiando estos colores cambia toda la pagina*/
+    --color-claro: rgba(233, 191, 124, 0.9);
+    --color-medio:  #e6b570;
+    --color-oscuro:#d19e57 ;
+    --color-oscurox2:  #c79144;
+    --color-texto: black;
+
+
     --color-sombra1: rgba(112, 139, 168, 0.25);
     --color-borde: #80bdff;
     --sombra-container: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
-    --background-gradient: linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%);
+    --background-gradient: linear-gradient(to bottom,var(--color-claro) 0%, rgba(233, 160, 65, 0.5) 100%);
     --sombra-textos: 2px 2px 3px #a86d1b;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: black;
-    background: linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%);
     background: var(--background-gradient);
 }
 
 h1 {
-    text-shadow: 2px 2px 3px #c79144;
-    color: rgba(0, 0, 0, 1)
+    text-shadow: 2px 2px 3px var(--color-oscurox2);
+    color: var(--color-texto)
 }
 
 h3 {
     margin-bottom: 1.5rem;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 3px 3px 6px rgba(0, 123, 255, 0.25);
+    color: var(--color-texto)
+}
+
+p,label {
+    color:var(--color-texto)
 }
 
 .form-control {
@@ -38,7 +52,6 @@ h3 {
 }
 
 #edadEncuestado:hover {
-    border-color: #80bdff;
     border-color: var(--color-borde);
     outline: 0;
     box-shadow: 0 0 0 0.02rem rgb(0 123 255 / 25%);
@@ -46,7 +59,6 @@ h3 {
 }
 
 #edadEncuestado:focus-within {
-    border-color: #80bdff;
     border-color: var(--color-borde);
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
@@ -55,7 +67,7 @@ h3 {
 
 .seccion-container {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
-    background-color: #e6b570;
+    background-color: var(--color-medio);
     box-shadow: var(--sombra-container);
     border-radius: 10px;
     padding: 1rem 1.5rem 1rem 1.5rem;
@@ -67,16 +79,16 @@ h1:focus {
 }
 
 #input-edad {
-    background-color: rgba(233, 191, 124, 0.9);
+    background-color:var(--color-claro);
     border-radius: 10px;
     border-style: none;
 }
 
 #comentarios {
-    background-color: #e6b570;
+    background-color: var(--color-medio);
     border-radius: 10px;
     border-style: none;
-    color: rgba(0, 0, 0, 0.8)
+    color: var(--color-texto)
 }
 
 #saveForm,
@@ -87,18 +99,18 @@ h1:focus {
 #pregunta14,
 #pregunta15,
 #pregunta16 {
-    background-color: rgba(233, 191, 124, 0.9);
+    background-color:var(--color-claro);
     border-radius: 10px;
     border-style: none;
 }
 
 #h3-comentarios {
-    text-shadow: 2px 2px 3px #d19e57;
-    color: rgba(0, 0, 0, 0.9)
+    text-shadow: 2px 2px 3px var(--color-oscuro);
+    color: var(--color-texto)
 }
 
 input {
-    background-color: rgba(233, 191, 124, 0.9);
+    background-color:var(--color-claro);
     border-style: none;
 }
 
@@ -118,7 +130,7 @@ input {
 }
 
 .dropdown-item:hover {
-    background-color: rgba(233, 191, 124, 0.9);
+    background-color:var(--color-claro);
 }
 
 @media screen and (max-width: 767px) {
