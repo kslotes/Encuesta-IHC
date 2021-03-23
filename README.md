@@ -1,4 +1,12 @@
 <!-- 
+      Notas francobdq (para llevar nota de los cambios totales de este branch): 
+            - Mejoré las variables en css para con simples cambios poder editar todos los colores de la página
+            - Modifique el tamaño de letra de pixeles a em para poder controlar esto de manera responsive
+            - Cree la sección de "aumentar tamaño de letra" en el apartado de discapacidad
+            - Adapte los colores de la interfaz para ya ser aptas con el modo daltonico y quedar bien para cualquier usuario
+            - Elimine el modo daltonico por la razón anterior.
+
+
       TODO: 
             Arreglar secuencia en las que aparecen los popups
             Investigar dark-theme
@@ -28,3 +36,6 @@
       17) Cambiamos el contraste de los contenedores si la persona selecciona que es daltonica.
       18) Cambiamos la font-family si la persona es dislexica.
  -->
+
+
+

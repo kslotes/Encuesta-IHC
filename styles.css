@@ -12,18 +12,18 @@
 
 :root {
     /* cambiando estos colores cambia toda la pagina*/
-    --color-claro: rgba(233, 191, 124, 0.9);
-    --color-medio:  #e6b570;
-    --color-oscuro:#d19e57 ;
-    --color-oscurox2:  #c79144;
-    --color-texto: black;
-
+    
+    --color-claro: #6E37A4/*rgba(233, 191, 124, 0.9)*/;
+    --color-medio:  #663399/* #e6b570*/;
+    --color-oscuro:#4F2877/*#d19e57 */;
+    --color-oscurox2:  #422163/*#c79144*/;
+    --color-texto: white;
 
     --color-sombra1: rgba(112, 139, 168, 0.25);
     --color-borde: #80bdff;
-    --sombra-container: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
-    --background-gradient: linear-gradient(to bottom,var(--color-claro) 0%, rgba(233, 160, 65, 0.5) 100%);
-    --sombra-textos: 2px 2px 3px #a86d1b;
+    --sombra-container: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.25);
+    --background-gradient: var(--color-oscurox2);/*linear-gradient(to bottom,var(--color-claro) 0%, var(--color-oscurox2) 100%);*/
+    --sombra-textos: rgba(0,0,0,0);
 }
 
 body {
@@ -39,7 +39,7 @@ h1 {
 
 h3 {
     margin-bottom: 1.5rem;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 3px 3px 6px rgba(0, 123, 255, 0.25);
+    text-shadow: var(--sombra-textos);
     color: var(--color-texto)
 }
 
@@ -66,7 +66,7 @@ p,label {
 }
 
 .seccion-container {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 123, 255, 0.25);
+    box-shadow: (var(--sombra-container));
     background-color: var(--color-medio);
     box-shadow: var(--sombra-container);
     border-radius: 10px;
@@ -80,6 +80,7 @@ h1:focus {
 
 #input-edad {
     background-color:var(--color-claro);
+    color:var(--color-texto);
     border-radius: 10px;
     border-style: none;
 }

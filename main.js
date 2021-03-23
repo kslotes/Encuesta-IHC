@@ -1,16 +1,6 @@
-let daltActivo = false;
 let disActivo = false;
 let sizeLetra = false;
 
-let checkDaltonismo = () => {
-    if (daltActivo) {
-        invDaltonismo();
-        document.getElementById("btn-Daltonismo").innerHTML = "Activar Daltonismo";
-    } else {
-        aplicarDaltonismo();
-        document.getElementById("btn-Daltonismo").innerHTML = "Desactivar Daltonismo";
-    }
-};
 let checkDislexia = () => {
     if (disActivo) {
         document.getElementById("btn-Dislexia").innerHTML = "Activar Dislexia";
@@ -32,11 +22,6 @@ let checkSizeLetra = () => {
 };
 
 let checkInit = () => {
-    if (daltActivo) {
-        document.getElementById("btn-Daltonismo").innerHTML = "Desactivar Daltonismo";
-    } else {
-        document.getElementById("btn-Daltonismo").innerHTML = "Activar Daltonismo";
-    }
     if (disActivo) {
         document.getElementById("btn-Dislexia").innerHTML = "Desactivar Dislexia";
     } else {
@@ -70,36 +55,6 @@ const aplicarSizeLetra = () => {
     document.querySelector("h1").style.fontSize = '2.5em';
     document.querySelector("body").style.fontSize = '1.5em';
     console.log("Aumento tamaño de letra");
-};
-
-const aplicarDaltonismo = () => {
-    daltActivo = true;
-    let section = document.querySelectorAll(".seccion-container");
-    let comentarios = document.querySelector("#comentarios");
-    let body = document.querySelector("body");
-    let inputEdad = document.querySelector("#input-edad");
-    inputEdad.style.backgroundColor = "#FF8039";
-    body.style.background = "linear-gradient(to bottom, #cf8539 0%, rgba(233, 160, 65, 1) 100%)";
-    comentarios.style.backgroundColor = "#f0ce9e";
-    section.forEach((el) => {
-        el.style.backgroundColor = "#f0ce9e";
-    });
-    console.log("Aplico daltonismo");
-};
-
-const invDaltonismo = () => {
-    daltActivo = false;
-    let section = document.querySelectorAll(".seccion-container");
-    let comentarios = document.querySelector("#comentarios");
-    let body = document.querySelector("body");
-    let inputEdad = document.querySelector("#input-edad");
-    body.style.background = "linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%)";
-    inputEdad.style.backgroundColor = "rgba(233, 191, 124, 0.9)";
-    comentarios.style.backgroundColor = "#e6b570";
-    section.forEach((el) => {
-        el.style.backgroundColor = "#e6b570";
-    });
-    console.log("Invierto daltonismo ");
 };
 
 const invDislexia = () => {
@@ -147,12 +102,6 @@ if (bowser.name.toLowerCase() !== "chrome") {
                   </label>
             </section>
             <section class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="checkBoxDaltonismo">
-                  <label class="form-check-label" for="checkBoxDaltonismo">
-                        Daltonismo
-                  </label>
-            </section>
-            <section class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="checkBoxSizeLetra">
                   <label class="form-check-label" for="checkBoxSizeLetra">
                         Aumentar tamaño de letra
@@ -170,9 +119,6 @@ if (bowser.name.toLowerCase() !== "chrome") {
             cancelButtonText: "Cancelar",
         }).then((result) => {
             if (result.isConfirmed) {
-                if (document.getElementById("checkBoxDaltonismo").checked) {
-                    aplicarDaltonismo();
-                }
                 if (document.getElementById("checkBoxDislexia").checked) {
                     aplicarDislexia();
                 }
