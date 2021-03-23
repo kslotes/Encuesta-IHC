@@ -49,6 +49,7 @@ p,label {
 
 .form-control {
     transition: ease 0.1s;
+    color: var(--color-texto);
 }
 
 #edadEncuestado:hover {
@@ -79,12 +80,15 @@ h1:focus {
 }
 
 #input-edad {
-    background-color:var(--color-claro);
-    color:var(--color-texto);
+    background-color:var(--color-oscuro);
+    
     border-radius: 10px;
     border-style: none;
 }
 
+#input-edad::placeholder{
+    color: var(--color-texto);
+}
 #comentarios {
     background-color: var(--color-medio);
     border-radius: 10px;
