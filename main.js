@@ -91,8 +91,6 @@ const invDislexia = () => {
     (body.style.fontFamily = "Roboto"), "Arial";
     dislexiaActiva = false;
     console.log("Invierto dislexia");
-    let invDislexia = document.getElementById("btn-invDislexia");
-    invDislexia.style.display = "none";
 };
 
 if (bowser.name.toLowerCase() !== "chrome") {
