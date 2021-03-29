@@ -8,7 +8,7 @@ let checkDaltonismo = () => {
         document.getElementById("btn-Daltonismo").innerHTML = "Activar Daltonismo";
     } else {
         aplicarDaltonismo();
-        document.getElementById("btn-Daltonismo").innerHTML = "Desactivar Daltonismo";
+        document.getElementById("btn-Daltonismo").innerHTML = "✓ Desactivar Daltonismo";
     }
 };
 let checkDislexia = () => {
@@ -16,7 +16,7 @@ let checkDislexia = () => {
         document.getElementById("btn-Dislexia").innerHTML = "Activar Dislexia";
         invDislexia();
     } else {
-        document.getElementById("btn-Dislexia").innerHTML = "Desactivar Dislexia";
+        document.getElementById("btn-Dislexia").innerHTML = "✓ Desactivar Dislexia";
         aplicarDislexia();
     }
 };
@@ -26,26 +26,26 @@ let checkSizeLetra = () => {
         document.getElementById("btn-sizeLetra").innerHTML = "Aumentar tamaño de letra";
         invSizeLetra();
     } else {
-        document.getElementById("btn-sizeLetra").innerHTML = "Encojer tamaño de letra";
+        document.getElementById("btn-sizeLetra").innerHTML = "✓ Encojer tamaño de letra";
         aplicarSizeLetra();
     }
 };
 
 let checkInit = () => {
     if (daltActivo) {
-        document.getElementById("btn-Daltonismo").innerHTML = "Desactivar Daltonismo";
+        document.getElementById("btn-Daltonismo").innerHTML = "✓ Desactivar Daltonismo";
     } else {
         document.getElementById("btn-Daltonismo").innerHTML = "Activar Daltonismo";
     }
     if (disActivo) {
-        document.getElementById("btn-Dislexia").innerHTML = "Desactivar Dislexia";
+        document.getElementById("btn-Dislexia").innerHTML = "✓ Desactivar Dislexia";
     } else {
         document.getElementById("btn-Dislexia").innerHTML = "Activar Dislexia";
     }
     if (!sizeLetra) {
         document.getElementById("btn-sizeLetra").innerHTML = "Aumentar tamaño de letra";
     } else {
-        document.getElementById("btn-sizeLetra").innerHTML = "Encojer tamaño de letra";
+        document.getElementById("btn-sizeLetra").innerHTML = "✓ Encojer tamaño de letra";
     }
 };
 
@@ -116,11 +116,6 @@ const invSizeLetra = () => {
     document.querySelector("body").style.fontSize = '1em';
     console.log("Encojo letra");
 };
-
-$(document).on('click', '.dropdown-item', function(event) {
-    event.preventDefault();
-    $(this).toggleClass('dropdown-item-checked');  
-  });
 
 if (bowser.name.toLowerCase() !== "chrome") {
     Swal.fire({
