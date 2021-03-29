@@ -163,3 +163,10 @@ input {
         font-size: 1em;
     }
 }
+
+.dropdown-item-checked::before {
+    position: absolute;
+    left: .4rem;
+    content: '✓';
+    font-weight: 600;
+  }

@@ -35,16 +35,16 @@
     <br />
     <!-- Default dropleft button -->
     <section class="btn-group dropleft sticky-top">
-        <button type="button" id="btn-acc" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-wheelchair"></i>
-      </button>
-        <section class="dropdown-menu">
-            <button id="btn-sizeLetra" class="dropdown-item " onclick="checkSizeLetra();"></button>
-            <button id="btn-Dislexia" class="dropdown-item " onclick="checkDislexia();"></button>
-            <button id="btn-Daltonismo" class="dropdown-item" onclick="checkDaltonismo();"></button>
-
-            <!-- Dropdown menu links -->
-        </section>
+        <div class="dropdown">
+            <button type="button" id="btn-acc" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-wheelchair"></i>
+            </button>
+            <div class="dropdown-menu">
+                <a id="btn-sizeLetra" onclick="checkSizeLetra();" class="dropdown-item">Item 1</a>
+                <a id="btn-Dislexia"  onclick="checkDislexia();" class="dropdown-item ">Item 2</a>
+                <a id="btn-Daltonismo"onclick="checkDaltonismo();"class="dropdown-item">Item 3</a>
+            </div>
+        </div> 
     </section>
     <form>
         <section class="container">

@@ -117,6 +117,10 @@ const invSizeLetra = () => {
     console.log("Encojo letra");
 };
 
+$(document).on('click', '.dropdown-item', function(event) {
+    event.preventDefault();
+    $(this).toggleClass('dropdown-item-checked');  
+  });
 
 if (bowser.name.toLowerCase() !== "chrome") {
     Swal.fire({
