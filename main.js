@@ -2,6 +2,13 @@ let daltActivo = false;
 let disActivo = false;
 let sizeLetra = false;
 
+
+const aumentoLetraH1 = '2.5em';
+const sizeLetraH1 = '2em';
+
+const aumentoLetraNormal = '1.25em';
+const sizeLetraNormal = '1em';
+
 let checkDaltonismo = () => {
     if (daltActivo) {
         invDaltonismo();
@@ -67,8 +74,15 @@ const aplicarDislexia = () => {
 
 const aplicarSizeLetra = () => {
     sizeLetra = true;
-    document.querySelector("h1").style.fontSize = '2.5em';
-    document.querySelector("body").style.fontSize = '1.5em';
+    document.querySelector("h1").style.fontSize = aumentoLetraH1;
+    document.querySelector("body").style.fontSize = aumentoLetraNormal;
+    document.querySelector("#input-edad").style.fontSize = aumentoLetraNormal;
+    document.querySelector("#comentarios").style.fontSize = aumentoLetraNormal;
+    document.querySelector("#pregunta14").style.fontSize = aumentoLetraNormal;
+    document.querySelector("#pregunta15").style.fontSize = aumentoLetraNormal;
+    document.querySelector("#pregunta16").style.fontSize = aumentoLetraNormal;
+
+
     console.log("Aumento tamaño de letra");
 };
 
@@ -112,8 +126,14 @@ const invDislexia = () => {
 
 const invSizeLetra = () => {
     sizeLetra = false;
-    document.querySelector("h1").style.fontSize = '2em';
-    document.querySelector("body").style.fontSize = '1em';
+    document.querySelector("h1").style.fontSize = sizeLetraH1;
+    document.querySelector("body").style.fontSize = sizeLetraNormal;
+    document.querySelector("#input-edad").style.fontSize = sizeLetraNormal;
+    document.querySelector("#comentarios").style.fontSize = sizeLetraNormal;
+    document.querySelector("#pregunta14").style.fontSize = sizeLetraNormal;
+    document.querySelector("#pregunta15").style.fontSize = sizeLetraNormal;
+    document.querySelector("#pregunta16").style.fontSize = sizeLetraNormal;
+
     console.log("Encojo letra");
 };
 
