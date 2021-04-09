@@ -64,76 +64,66 @@ document.addEventListener(
     false
 );
 
+function cambiarSizeLetra(tamLetraH1, tamLetraNormal) {
+    console.log("entraAaAaAa en funcion");
+    document.querySelector("h1").style.fontSize = tamLetraH1;
+    document.querySelector("body").style.fontSize = tamLetraNormal;
+    document.querySelector("#input-edad").style.fontSize = tamLetraNormal;
+    document.querySelector("#comentarios").style.fontSize = tamLetraNormal;
+    document.querySelector("#pregunta14").style.fontSize = tamLetraNormal;
+    document.querySelector("#pregunta15").style.fontSize = tamLetraNormal;
+    document.querySelector("#pregunta16").style.fontSize = tamLetraNormal;
+}
+
+function  cambiarDaltonismo(comentariosColor, bodyColor, inputEdadColor, sectionColor){
+    let section = document.querySelectorAll(".seccion-container");
+    document.querySelector("#comentarios").style.backgroundColor = comentariosColor;
+    document.querySelector("body").style.background = bodyColor;
+    document.querySelector("#input-edad").style.backgroundColor = inputEdadColor;
+    section.forEach((el) => {
+        el.style.backgroundColor = sectionColor;
+    });
+}
+
+function cambiarDislexia(letra){
+    let body = document.querySelector("body");
+    (body.style.fontFamily = letra), "Arial";
+}
+
+
 const aplicarDislexia = () => {
     disActivo = true;
-    let body = document.querySelector("body");
-    (body.style.fontFamily = "opendislexic"), "Arial";
+    cambiarDislexia("opendislexic");
     console.log("Aplico dislexia");
 };
 
-
 const aplicarSizeLetra = () => {
     sizeLetra = true;
-    document.querySelector("h1").style.fontSize = aumentoLetraH1;
-    document.querySelector("body").style.fontSize = aumentoLetraNormal;
-    document.querySelector("#input-edad").style.fontSize = aumentoLetraNormal;
-    document.querySelector("#comentarios").style.fontSize = aumentoLetraNormal;
-    document.querySelector("#pregunta14").style.fontSize = aumentoLetraNormal;
-    document.querySelector("#pregunta15").style.fontSize = aumentoLetraNormal;
-    document.querySelector("#pregunta16").style.fontSize = aumentoLetraNormal;
-
-
+    cambiarSizeLetra(aumentoLetraH1, aumentoLetraNormal);
     console.log("Aumento tamaño de letra");
 };
 
 const aplicarDaltonismo = () => {
     daltActivo = true;
-    let section = document.querySelectorAll(".seccion-container");
-    let comentarios = document.querySelector("#comentarios");
-    let body = document.querySelector("body");
-    let inputEdad = document.querySelector("#input-edad");
-    inputEdad.style.backgroundColor = "#FF8039";
-    body.style.background = "linear-gradient(to bottom, #cf8539 0%, rgba(233, 160, 65, 1) 100%)";
-    comentarios.style.backgroundColor = "#f0ce9e";
-    section.forEach((el) => {
-        el.style.backgroundColor = "#f0ce9e";
-    });
+    cambiarDaltonismo("#f0ce9e", "linear-gradient(to bottom, #cf8539 0%, rgba(233, 160, 65, 1) 100%)","#FF8039","#f0ce9e");
     console.log("Aplico daltonismo");
 };
 
 const invDaltonismo = () => {
     daltActivo = false;
-    let section = document.querySelectorAll(".seccion-container");
-    let comentarios = document.querySelector("#comentarios");
-    let body = document.querySelector("body");
-    let inputEdad = document.querySelector("#input-edad");
-    body.style.background = "linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%)";
-    inputEdad.style.backgroundColor = "rgba(233, 191, 124, 0.9)";
-    comentarios.style.backgroundColor = "#e6b570";
-    section.forEach((el) => {
-        el.style.backgroundColor = "#e6b570";
-    });
+    cambiarDaltonismo("#e6b570", "linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%)","rgba(233, 191, 124, 0.9)", "#e6b570");
     console.log("Invierto daltonismo ");
 };
 
 const invDislexia = () => {
     disActivo = false;
-    let body = document.querySelector("body");
-    (body.style.fontFamily = "Roboto"), "Arial";
-    dislexiaActiva = false;
+    cambiarDislexia("Roboto");
     console.log("Invierto dislexia");
 };
 
 const invSizeLetra = () => {
     sizeLetra = false;
-    document.querySelector("h1").style.fontSize = sizeLetraH1;
-    document.querySelector("body").style.fontSize = sizeLetraNormal;
-    document.querySelector("#input-edad").style.fontSize = sizeLetraNormal;
-    document.querySelector("#comentarios").style.fontSize = sizeLetraNormal;
-    document.querySelector("#pregunta14").style.fontSize = sizeLetraNormal;
-    document.querySelector("#pregunta15").style.fontSize = sizeLetraNormal;
-    document.querySelector("#pregunta16").style.fontSize = sizeLetraNormal;
-
+    cambiarSizeLetra(sizeLetraH1, sizeLetraNormal);
     console.log("Encojo letra");
 };
 
