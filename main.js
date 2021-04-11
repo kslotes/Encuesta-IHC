@@ -75,11 +75,14 @@ function cambiarSizeLetra(tamLetraH1, tamLetraNormal) {
     document.querySelector("#pregunta16").style.fontSize = tamLetraNormal;
 }
 
-function  cambiarDaltonismo(comentariosColor, bodyColor, inputEdadColor, sectionColor){
+function cambiarDaltonismo(comentariosColor, bodyColor, inputEdadColor, sectionColor){
     let section = document.querySelectorAll(".seccion-container");
     document.querySelector("#comentarios").style.backgroundColor = comentariosColor;
     document.querySelector("body").style.background = bodyColor;
     document.querySelector("#input-edad").style.backgroundColor = inputEdadColor;
+    document.querySelector("#pregunta14").style.backgroundColor = inputEdadColor;
+    document.querySelector("#pregunta15").style.backgroundColor = inputEdadColor;
+    document.querySelector("#pregunta16").style.backgroundColor = inputEdadColor;
     section.forEach((el) => {
         el.style.backgroundColor = sectionColor;
     });
