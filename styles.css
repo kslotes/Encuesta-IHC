@@ -133,6 +133,7 @@ input {
     background-color:var(--color-claro);
 }
 
+/* TABLET */
 @media screen and (max-width: 767px) {
     h3 {
         text-align: center;
@@ -148,20 +149,8 @@ input {
     }
 }
 
-@media screen and (max-width: 550px) {
-    #input-edad {
-        width: 80%;
-    }
-}
 
-@media screen and (max-width: 370px) {
-    #input-edad {
-        width: 90%;
-    }
-}
-
-
-/* MOTO G4 */
+/* CELULAR */
 
 @media screen and (max-width: 400px) {
     .container {
