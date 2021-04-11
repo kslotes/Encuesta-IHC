@@ -10,32 +10,23 @@ const aumentoLetraNormal = '1.25em';
 const sizeLetraNormal = '1em';
 
 let checkDaltonismo = () => {
-    if (daltActivo) {
+    if (daltActivo)
         invDaltonismo();
-        document.getElementById("btn-Daltonismo").innerHTML = "Activar Daltonismo";
-    } else {
+    else 
         aplicarDaltonismo();
-        document.getElementById("btn-Daltonismo").innerHTML = "✓ Desactivar Daltonismo";
-    }
 };
 let checkDislexia = () => {
-    if (disActivo) {
-        document.getElementById("btn-Dislexia").innerHTML = "Activar Dislexia";
+    if (disActivo)
         invDislexia();
-    } else {
-        document.getElementById("btn-Dislexia").innerHTML = "✓ Desactivar Dislexia";
+    else
         aplicarDislexia();
-    }
 };
 
 let checkSizeLetra = () => {
-    if (sizeLetra) {
-        document.getElementById("btn-sizeLetra").innerHTML = "Aumentar tamaño de letra";
+    if (sizeLetra) 
         invSizeLetra();
-    } else {
-        document.getElementById("btn-sizeLetra").innerHTML = "✓ Encojer tamaño de letra";
+    else
         aplicarSizeLetra();
-    }
 };
 
 let checkInit = () => {
@@ -64,8 +55,8 @@ document.addEventListener(
     false
 );
 
-function cambiarSizeLetra(tamLetraH1, tamLetraNormal) {
-    console.log("entraAaAaAa en funcion");
+function cambiarSizeLetra(tamLetraH1, tamLetraNormal, textoBoton) {
+    document.getElementById("btn-sizeLetra").innerHTML = textoBoton;
     document.querySelector("h1").style.fontSize = tamLetraH1;
     document.querySelector("body").style.fontSize = tamLetraNormal;
     document.querySelector("#input-edad").style.fontSize = tamLetraNormal;
@@ -75,8 +66,9 @@ function cambiarSizeLetra(tamLetraH1, tamLetraNormal) {
     document.querySelector("#pregunta16").style.fontSize = tamLetraNormal;
 }
 
-function cambiarDaltonismo(comentariosColor, bodyColor, inputEdadColor, sectionColor){
+function cambiarDaltonismo(comentariosColor, bodyColor, inputEdadColor, sectionColor, textoBoton){
     let section = document.querySelectorAll(".seccion-container");
+    document.getElementById("btn-Daltonismo").innerHTML = textoBoton;
     document.querySelector("#comentarios").style.backgroundColor = comentariosColor;
     document.querySelector("body").style.background = bodyColor;
     document.querySelector("#input-edad").style.backgroundColor = inputEdadColor;
@@ -88,7 +80,8 @@ function cambiarDaltonismo(comentariosColor, bodyColor, inputEdadColor, sectionC
     });
 }
 
-function cambiarDislexia(letra){
+function cambiarDislexia(letra, textoBoton){
+    document.getElementById("btn-Dislexia").innerHTML = textoBoton;
     let body = document.querySelector("body");
     (body.style.fontFamily = letra), "Arial";
 }
@@ -96,37 +89,37 @@ function cambiarDislexia(letra){
 
 const aplicarDislexia = () => {
     disActivo = true;
-    cambiarDislexia("opendislexic");
+    cambiarDislexia("opendislexic", "✓ Desactivar Dislexia");
     console.log("Aplico dislexia");
 };
 
 const aplicarSizeLetra = () => {
     sizeLetra = true;
-    cambiarSizeLetra(aumentoLetraH1, aumentoLetraNormal);
+    cambiarSizeLetra(aumentoLetraH1, aumentoLetraNormal,"✓ Encojer tamaño de letra");
     console.log("Aumento tamaño de letra");
 };
 
 const aplicarDaltonismo = () => {
     daltActivo = true;
-    cambiarDaltonismo("#f0ce9e", "linear-gradient(to bottom, #cf8539 0%, rgba(233, 160, 65, 1) 100%)","#FF8039","#f0ce9e");
+    cambiarDaltonismo("#f0ce9e", "linear-gradient(to bottom, #cf8539 0%, rgba(233, 160, 65, 1) 100%)","#FF8039","#f0ce9e","✓ Desactivar Daltonismo");
     console.log("Aplico daltonismo");
 };
 
 const invDaltonismo = () => {
     daltActivo = false;
-    cambiarDaltonismo("#e6b570", "linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%)","rgba(233, 191, 124, 0.9)", "#e6b570");
+    cambiarDaltonismo("#e6b570", "linear-gradient(to bottom, rgba(233, 191, 124, 0.9) 0%, rgba(233, 160, 65, 0.5) 100%)","rgba(233, 191, 124, 0.9)", "#e6b570","Activar Daltonismo");
     console.log("Invierto daltonismo ");
 };
 
 const invDislexia = () => {
     disActivo = false;
-    cambiarDislexia("Roboto");
+    cambiarDislexia("Roboto","Activar Dislexia");
     console.log("Invierto dislexia");
 };
 
 const invSizeLetra = () => {
     sizeLetra = false;
-    cambiarSizeLetra(sizeLetraH1, sizeLetraNormal);
+    cambiarSizeLetra(sizeLetraH1, sizeLetraNormal,"Aumentar tamaño de letra");
     console.log("Encojo letra");
 };
 
